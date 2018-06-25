@@ -9,12 +9,12 @@
 import UIKit
 
 enum Operation: String {
-    case Equal = "="
-    case Add = "+"
-    case Substract = "-"
-    case Divide = "/"
-    case Multiply = "*"
-    case Nil = "Nil"
+    case e = "="
+    case a = "+"
+    case s = "-"
+    case D = "/"
+    case M = "*"
+    case N = "Nil"
 }
 
 class PlusViewController: UIViewController {
@@ -25,12 +25,11 @@ class PlusViewController: UIViewController {
     var leftValue: Double = 0
     var rightValue: Double = 0
     var result: Double = 0
-    var currentOperation: Operation = .Nil
+    var currentOperation: Operation = .N
     
     override func viewDidLoad() {
         super.viewDidLoad()
         outputLabel.text = runningNumber
-        
     }
     
     func setOutputLabelSize(string: String) {
@@ -45,7 +44,7 @@ class PlusViewController: UIViewController {
     }
     
     func operation(operation: Operation) {
-        if currentOperation == .Nil {
+        if currentOperation == .N {
             leftValue = Double(runningNumber)!
             runningNumber = "0"
             currentOperation = operation
@@ -54,13 +53,13 @@ class PlusViewController: UIViewController {
                 rightValue = Double(runningNumber)!
                 runningNumber = "0"
                 
-                if currentOperation == .Add {
+                if currentOperation == .a {
                     result = leftValue + rightValue
-                } else if currentOperation == .Substract {
+                } else if currentOperation == .s {
                     result = leftValue - rightValue
-                } else if currentOperation == .Multiply {
+                } else if currentOperation == .M {
                     result = leftValue * rightValue
-                } else if currentOperation == .Divide {
+                } else if currentOperation == .D {
                     result = leftValue / rightValue
                 }
                 
@@ -88,32 +87,29 @@ class PlusViewController: UIViewController {
                     runningNumber += String(sender.tag)
                 }
             }
-            
-            //setOutputLabelSize(string: runningNumber)
             outputLabel.text = runningNumber
         }
     }
     
     @IBAction func operatorClick(_ sender: UIButton) {
-        if sender.tag == 11 { // '='
+        if sender.tag == 11 {
             operation(operation: currentOperation)
-        } else if sender.tag == 12 { // '+'
-            operation(operation: .Add)
-        } else if sender.tag == 13 { // '-'
-            operation(operation: .Substract)
-        } else if sender.tag == 14 { // '×'
-            operation(operation: .Multiply)
-        } else if sender.tag == 15 { // '÷'
-            operation(operation: .Divide)
-        } else if sender.tag == 16 { // 'c'
+        } else if sender.tag == 12 {
+            operation(operation: .a)
+        } else if sender.tag == 13 {
+            operation(operation: .s)
+        } else if sender.tag == 14 {
+            operation(operation: .M)
+        } else if sender.tag == 15 {
+            operation(operation: .D)
+        } else if sender.tag == 16 {
             runningNumber = "0"
             outputLabel.text = runningNumber
             leftValue = 0
             rightValue = 0
             result = 0
-            currentOperation = .Nil
+            currentOperation = .N
             outputLabel.font = UIFont.systemFont(ofSize: 90)
         }
     }
 }
-
