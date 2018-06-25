@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate {
+class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, MKMapViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var detailTableView: UITableView!
     @IBOutlet weak var cellImageView: UIImageView!
@@ -60,6 +60,7 @@ class DetailViewController: UIViewController, UITableViewDelegate, UITableViewDa
             return cell
         }
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 전화걸기 alert
         if(indexPath.row == 1){

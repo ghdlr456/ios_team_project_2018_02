@@ -19,6 +19,7 @@
 		741C17EC20AC061400FE6E1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741C17EB20AC061400FE6E1E /* Assets.xcassets */; };
 		741C17EF20AC061400FE6E1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741C17ED20AC061400FE6E1E /* LaunchScreen.storyboard */; };
 		741C17F720AC06C400FE6E1E /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741C17F620AC06C400FE6E1E /* MyTableViewController.swift */; };
+		745E820720E0EC71009CEECB /* PlusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E820620E0EC71009CEECB /* PlusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		741C17EE20AC061400FE6E1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		741C17F020AC061400FE6E1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		741C17F620AC06C400FE6E1E /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		745E820620E0EC71009CEECB /* PlusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				058F274620BEE6CC00271381 /* MapViewController.swift */,
 				741C17F620AC06C400FE6E1E /* MyTableViewController.swift */,
 				641A0F0420BBDA36004ECC5A /* DetailViewController.swift */,
+				745E820620E0EC71009CEECB /* PlusViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				058F274720BEE6CC00271381 /* MapViewController.swift in Sources */,
 				641A0F0520BBDA36004ECC5A /* DetailViewController.swift in Sources */,
 				0564FFF220CE2C4F00353BD8 /* FoodStore.swift in Sources */,
+				745E820720E0EC71009CEECB /* PlusViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
