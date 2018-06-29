@@ -12,7 +12,8 @@
 
 2. 그리고 늘해랑을 눌렀을때 위에 바 버튼아이템을 추가해서 누르면 계산기나오게 만들어서 가격을 미리 계산할 수 있게 만들었습니다.
 
-
+![2018-06-29 2 14 30](https://user-images.githubusercontent.com/37132895/42074558-cc35a280-7ba7-11e8-9445-42e3247268e1.png)
+![2018-06-29 2 14 35](https://user-images.githubusercontent.com/37132895/42074562-cf6d4246-7ba7-11e8-993b-b7afa40fca43.png)
 
 
 
