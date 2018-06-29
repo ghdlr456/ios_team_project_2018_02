@@ -5,7 +5,7 @@
 
 1. 교수님 기본 틀에서 전화걸기 얼러트 만들고 전화를 거시겠습니까? 눌르면 전화걸리고 메뉴를 누르면 전체메뉴 얼르트가 뜹니다.
 
-
+![2018-06-29 2 14 30](https://user-images.githubusercontent.com/37132895/42074460-60bdb47a-7ba7-11e8-80f9-aa52cffe065e.png)
 ![2018-06-29 2 14 14](https://user-images.githubusercontent.com/37132895/42074428-317a3238-7ba7-11e8-957b-45f6e71efdd4.png)
 
 
